@@ -9,7 +9,6 @@ import pandas as pd
 import numpy as np
 import re
 import jieba
-import json
 import logging
 import time
 from pathlib import Path
