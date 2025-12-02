@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from collections import Counter
-from tqdm import tqdm  # 需要安装: pip install tqdm
+from tqdm import tqdm
 
 
 class DataAnalyzer:

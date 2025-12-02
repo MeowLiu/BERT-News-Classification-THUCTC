@@ -6,7 +6,23 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "jieba>=0.42.1",
+    "nlpaug>=1.1.11",
     "pandas>=2.3.3",
     "scikit-learn>=1.7.2",
+    "torch>=2.7.1",
+    "torchaudio>=2.7.1",
+    "torchvision>=0.22.1",
     "tqdm>=4.67.1",
+    "transformers>=4.57.3",
 ]
+
+[tool.uv]
+index = [
+    { name = "pytorch", url = "https://download.pytorch.org/whl/cu118", explicit = true },
+    { name = "pypi", url = "https://pypi.org/simple" }
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
