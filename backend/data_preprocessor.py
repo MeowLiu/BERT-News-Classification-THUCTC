@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-THUCNews 数据预处理脚本
+THUCTCNews 数据预处理脚本
 优化点：加入tqdm进度条、正则预编译、代码精简
 """
 
@@ -93,7 +93,7 @@ class DataPreprocessor:
 
         return " ".join(cleaned_words)
 
-    def process(self, input_file: str, output_dir: str = "data/cleaned_THUCNews") -> Dict:
+    def process(self, input_file: str, output_dir: str = "data/cleaned_THUCTCNews") -> Dict:
         """执行完整处理流程"""
         start_time = time.time()
         out_path = Path(output_dir)
@@ -211,7 +211,7 @@ class DataPreprocessor:
 
 if __name__ == "__main__":
     # 使用示例
-    input_csv = "data/THUCNews.csv"  # 替换为你的实际文件名
+    input_csv = "data/THUCTCNews.csv"  # 替换为你的实际文件名
 
     # 简单的检查文件是否存在，防止直接运行报错
     if not Path(input_csv).exists():

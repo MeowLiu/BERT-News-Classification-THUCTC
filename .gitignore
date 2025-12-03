@@ -1,5 +1,5 @@
 .venv
 .python-version
 uv.lock
-data/THUCNews*
-data/cleaned_THUCNews*
+data/THUCTCNews*
+data/cleaned_THUCTCNews*

@@ -174,7 +174,7 @@ class DataAnalyzer:
 
 
 if __name__ == "__main__":
-    df_filtered = pd.read_csv("data/cleaned_THUCNews/data_cleaned.csv")
+    df_filtered = pd.read_csv("data/cleaned_THUCTCNews/data_cleaned.csv")
 
     analyzer = DataAnalyzer(df_filtered)
     analyzer.run("data/detailed_analysis_report.txt")

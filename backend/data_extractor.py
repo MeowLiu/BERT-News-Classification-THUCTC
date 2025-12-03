@@ -132,7 +132,7 @@ class NewsDataExtractor:
 
         return all_data
 
-    def save_to_json(self, output_file: str = "data/THUCNews.json") -> None:
+    def save_to_json(self, output_file: str = "data/THUCTCNews.json") -> None:
         """将抽取的数据保存为JSON格式(自动创建目录)"""
         if not self.extracted_data:
             logger.warning("无数据可保存，请先调用 extract_all_data()")
@@ -235,7 +235,7 @@ class NewsDataExtractor:
 
 
 if __name__ == "__main__":
-    extractor = NewsDataExtractor(data_dir="data/THUCNews")
+    extractor = NewsDataExtractor(data_dir="data/THUCTCNews")
     extractor.extract_all_data()
     # extractor.print_statistics()
-    extractor.save_to_csv(output_file="data/THUCNews.csv")
+    extractor.save_to_csv(output_file="data/THUCTCNews.csv")

@@ -208,7 +208,7 @@ class DataAugmenter:
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("data/cleaned_THUCNews/data_cleaned.csv")
+    df = pd.read_csv("data/cleaned_THUCTCNews/data_cleaned.csv")
 
     # 实例化增强器
     # 注意：target_count 设置为期望的每类数量
@@ -224,4 +224,4 @@ if __name__ == "__main__":
     df_new = augmenter.process()
 
     # 保存最终 csv
-    df_new.to_csv("data/THUCNews_Augmented.csv", index=False)
+    df_new.to_csv("data/THUCTCNews_Augmented.csv", index=False)

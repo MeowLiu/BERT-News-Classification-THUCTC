@@ -213,7 +213,7 @@ const App: React.FC = () => {
 
       {/* Footer decorative */}
       <footer className="py-8 text-center text-slate-400 text-sm relative z-10">
-        <p>© 2024 THCUNews AI Lab. All rights reserved.</p>
+        <p>© 2025 THUCTCNews 新闻文本分类系统</p>
       </footer>
     </div>
   );
