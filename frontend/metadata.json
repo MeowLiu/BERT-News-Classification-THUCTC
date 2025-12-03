@@ -1,0 +1,5 @@
+{
+  "name": "THCUNews Classifier",
+  "description": "A modern text classification interface supporting drag-and-drop file uploads, powered by mock BERT/RoBERTa models.",
+  "requestFramePermissions": []
+}
